@@ -1,0 +1,20 @@
+certifi==2023.7.22
+charset-normalizer==3.2.0
+dparse==0.6.3
+gitdb==4.0.10
+GitPython==3.1.37
+-e git+https://github.com/histofyi/helpers.git@f91280dd50f3c5134b4b4856b25e041e44957217#egg=helpers
+idna==3.4
+markdown-it-py==3.0.0
+mdurl==0.1.2
+packaging==23.1
+-e git+https://github.com/histofyi/pipeline.git@37bab622452b32d74ba7782c9f460e9b34051214#egg=pipeline
+Pygments==2.16.1
+PyYAML==6.0.1
+requests==2.31.0
+rich==13.5.3
+smmap==5.0.1
+toml==0.10.2
+tomli==2.0.1
+typing_extensions==4.8.0
+urllib3==2.0.5
