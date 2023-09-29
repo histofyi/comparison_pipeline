@@ -11,9 +11,9 @@ def run_pipeline(**kwargs) -> Dict:
 
     pipeline.load_steps(steps)
 
-    pipeline.run_step('1') # Create folder structure.
-    #pipeline.run_step('2') # Download apo TCR structures from histo.
-    #pipeline.run_step('3') # Download holo TCR structures from histo.
+    #pipeline.run_step('1') # Create folder structure.
+    #pipeline.run_step('2') # Catalogue apo TCR structures from histo.
+    pipeline.run_step('3') # Catalogue holo TCR structures from histo.
     #pipeline.run_step('4') # Download holo TCR structures from STCRDab.
     #pipeline.run_step('5') # Remove altlocs in structures.
     #pipeline.run_step('6') # Rename apo TCR structure.

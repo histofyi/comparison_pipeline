@@ -1,0 +1,910 @@
+{
+    "h2_db_asnenmetm": {
+        "structures": [
+            {
+                "pbd_code": "4hux",
+                "resolution": "2.20"
+            },
+            {
+                "pbd_code": "1hoc",
+                "resolution": "2.40"
+            }
+        ]
+    },
+    "h2_db_kapanfatm": {
+        "structures": [
+            {
+                "pbd_code": "3tbs",
+                "resolution": "2.49"
+            }
+        ]
+    },
+    "h2_db_kapfnfatm": {
+        "structures": [
+            {
+                "pbd_code": "3tby",
+                "resolution": "2.50"
+            }
+        ]
+    },
+    "h2_db_kapydyapi": {
+        "structures": [
+            {
+                "pbd_code": "6g9r",
+                "resolution": "2.70"
+            }
+        ]
+    },
+    "h2_db_kapynfatm": {
+        "structures": [
+            {
+                "pbd_code": "4nsk",
+                "resolution": "2.60"
+            }
+        ]
+    },
+    "h2_db_kavanfatm": {
+        "structures": [
+            {
+                "pbd_code": "3quk",
+                "resolution": "2.41"
+            }
+        ]
+    },
+    "h2_db_kavynfatm": {
+        "structures": [
+            {
+                "pbd_code": "2f74",
+                "resolution": "2.70"
+            },
+            {
+                "pbd_code": "1s7u",
+                "resolution": "2.20"
+            },
+            {
+                "pbd_code": "1n5a",
+                "resolution": "2.85"
+            },
+            {
+                "pbd_code": "1ffn",
+                "resolution": "2.70"
+            }
+        ]
+    },
+    "h2_db_sqllnakyl": {
+        "structures": [
+            {
+                "pbd_code": "5wli",
+                "resolution": "2.20"
+            }
+        ]
+    },
+    "h2_db_sslcnfrayv": {
+        "structures": [
+            {
+                "pbd_code": "7n5q",
+                "resolution": "1.76"
+            }
+        ]
+    },
+    "h2_db_sslenfrayv": {
+        "structures": [
+            {
+                "pbd_code": "1yn6",
+                "resolution": "2.20"
+            },
+            {
+                "pbd_code": "1wby",
+                "resolution": "2.30"
+            }
+        ]
+    },
+    "h2_db_ygfrnvvhi": {
+        "structures": [
+            {
+                "pbd_code": "7n9j",
+                "resolution": "1.74"
+            }
+        ]
+    },
+    "h2_dd_rgpgrafvti": {
+        "structures": [
+            {
+                "pbd_code": "6npr",
+                "resolution": "2.37"
+            },
+            {
+                "pbd_code": "3ecb",
+                "resolution": "1.70"
+            },
+            {
+                "pbd_code": "1ddh",
+                "resolution": "3.10"
+            },
+            {
+                "pbd_code": "1bii",
+                "resolution": "2.40"
+            }
+        ]
+    },
+    "h2_kb_eqykfysv": {
+        "structures": [
+            {
+                "pbd_code": "1lek",
+                "resolution": "2.15"
+            },
+            {
+                "pbd_code": "1leg",
+                "resolution": "1.75"
+            }
+        ]
+    },
+    "h2_kb_infdfnti": {
+        "structures": [
+            {
+                "pbd_code": "2clz",
+                "resolution": "1.90"
+            },
+            {
+                "pbd_code": "1nan",
+                "resolution": "2.30"
+            }
+        ]
+    },
+    "h2_kb_kvitfidl": {
+        "structures": [
+            {
+                "pbd_code": "1kj3",
+                "resolution": "2.30"
+            }
+        ]
+    },
+    "h2_kb_rgyvyqgl": {
+        "structures": [
+            {
+                "pbd_code": "1kpu",
+                "resolution": "1.50"
+            },
+            {
+                "pbd_code": "1fzm",
+                "resolution": "1.80"
+            },
+            {
+                "pbd_code": "1fzj",
+                "resolution": "1.90"
+            },
+            {
+                "pbd_code": "2vaa",
+                "resolution": "2.30"
+            },
+            {
+                "pbd_code": "2mha",
+                "resolution": "2.50"
+            }
+        ]
+    },
+    "h2_kb_sqyyynsl": {
+        "structures": [
+            {
+                "pbd_code": "2clv",
+                "resolution": "1.90"
+            }
+        ]
+    },
+    "hla_a_02_01_aagigiltv": {
+        "structures": [
+            {
+                "pbd_code": "3qfd",
+                "resolution": "1.68"
+            },
+            {
+                "pbd_code": "2guo",
+                "resolution": "1.90"
+            }
+        ]
+    },
+    "hla_a_02_01_algigiltv": {
+        "structures": [
+            {
+                "pbd_code": "2gtz",
+                "resolution": "1.70"
+            },
+            {
+                "pbd_code": "1jht",
+                "resolution": "2.15"
+            }
+        ]
+    },
+    "hla_a_02_01_alwgffpvl": {
+        "structures": [
+            {
+                "pbd_code": "1b0g",
+                "resolution": "2.50"
+            }
+        ]
+    },
+    "hla_a_02_01_alwgpdpaaa": {
+        "structures": [
+            {
+                "pbd_code": "3utq",
+                "resolution": "1.67"
+            }
+        ]
+    },
+    "hla_a_02_01_aqwgpdpaaa": {
+        "structures": [
+            {
+                "pbd_code": "5c0d",
+                "resolution": "1.68"
+            }
+        ]
+    },
+    "hla_a_02_01_eaagigiltv": {
+        "structures": [
+            {
+                "pbd_code": "2gt9",
+                "resolution": "1.75"
+            }
+        ]
+    },
+    "hla_a_02_01_elaaigiltv": {
+        "structures": [
+            {
+                "pbd_code": "4jfp",
+                "resolution": "1.91"
+            }
+        ]
+    },
+    "hla_a_02_01_elagigiltv": {
+        "structures": [
+            {
+                "pbd_code": "1jf1",
+                "resolution": "1.85"
+            }
+        ]
+    },
+    "hla_a_02_01_gilefvftl": {
+        "structures": [
+            {
+                "pbd_code": "5hhp",
+                "resolution": "1.90"
+            }
+        ]
+    },
+    "hla_a_02_01_gilgfvftl": {
+        "structures": [
+            {
+                "pbd_code": "2vll",
+                "resolution": "1.60"
+            },
+            {
+                "pbd_code": "1hhi",
+                "resolution": "2.50"
+            }
+        ]
+    },
+    "hla_a_02_01_gilglvftl": {
+        "structures": [
+            {
+                "pbd_code": "5hhn",
+                "resolution": "2.03"
+            }
+        ]
+    },
+    "hla_a_02_01_glctlvaml": {
+        "structures": [
+            {
+                "pbd_code": "3mre",
+                "resolution": "1.10"
+            }
+        ]
+    },
+    "hla_a_02_01_gvydgrehtv": {
+        "structures": [
+            {
+                "pbd_code": "1i4f",
+                "resolution": "1.40"
+            }
+        ]
+    },
+    "hla_a_02_01_hmtevvrhc": {
+        "structures": [
+            {
+                "pbd_code": "6vr5",
+                "resolution": "2.38"
+            }
+        ]
+    },
+    "hla_a_02_01_imdqvpfsv": {
+        "structures": [
+            {
+                "pbd_code": "1tvh",
+                "resolution": "1.80"
+            }
+        ]
+    },
+    "hla_a_02_01_itdqvpfsv": {
+        "structures": [
+            {
+                "pbd_code": "1tvb",
+                "resolution": "1.80"
+            }
+        ]
+    },
+    "hla_a_02_01_klvalginav": {
+        "structures": [
+            {
+                "pbd_code": "3mrm",
+                "resolution": "1.90"
+            }
+        ]
+    },
+    "hla_a_02_01_lgygfvnyi": {
+        "structures": [
+            {
+                "pbd_code": "3pwl",
+                "resolution": "1.65"
+            }
+        ]
+    },
+    "hla_a_02_01_llfgkpvyv": {
+        "structures": [
+            {
+                "pbd_code": "2git",
+                "resolution": "1.70"
+            }
+        ]
+    },
+    "hla_a_02_01_llfgypvyv": {
+        "structures": [
+            {
+                "pbd_code": "3ixa",
+                "resolution": "2.10"
+            },
+            {
+                "pbd_code": "2av1",
+                "resolution": "1.95"
+            },
+            {
+                "pbd_code": "2av7",
+                "resolution": "2.05"
+            },
+            {
+                "pbd_code": "1duz",
+                "resolution": "1.80"
+            },
+            {
+                "pbd_code": "1hhk",
+                "resolution": "2.50"
+            }
+        ]
+    },
+    "hla_a_02_01_mlwgylqyv": {
+        "structures": [
+            {
+                "pbd_code": "3h7b",
+                "resolution": "1.88"
+            },
+            {
+                "pbd_code": "3h9h",
+                "resolution": "2.00"
+            }
+        ]
+    },
+    "hla_a_02_01_mmwdrglgmm": {
+        "structures": [
+            {
+                "pbd_code": "6amt",
+                "resolution": "2.50"
+            }
+        ]
+    },
+    "hla_a_02_01_mvwgpdplyv": {
+        "structures": [
+            {
+                "pbd_code": "5n1y",
+                "resolution": "1.39"
+            }
+        ]
+    },
+    "hla_a_02_01_nlvpmvatv": {
+        "structures": [
+            {
+                "pbd_code": "6q3k",
+                "resolution": "1.50"
+            },
+            {
+                "pbd_code": "2x4r",
+                "resolution": "2.30"
+            },
+            {
+                "pbd_code": "3gso",
+                "resolution": "1.60"
+            }
+        ]
+    },
+    "hla_a_02_01_rlqslqtyv": {
+        "structures": [
+            {
+                "pbd_code": "7n1b",
+                "resolution": "2.81"
+            }
+        ]
+    },
+    "hla_a_02_01_rmfpnapyl": {
+        "structures": [
+            {
+                "pbd_code": "3hpj",
+                "resolution": "2.00"
+            }
+        ]
+    },
+    "hla_a_02_01_rqfgpdfpti": {
+        "structures": [
+            {
+                "pbd_code": "5c0i",
+                "resolution": "1.53"
+            }
+        ]
+    },
+    "hla_a_02_01_rqfgpdwiva": {
+        "structures": [
+            {
+                "pbd_code": "5c0j",
+                "resolution": "1.64"
+            }
+        ]
+    },
+    "hla_a_02_01_rqwgpdpaav": {
+        "structures": [
+            {
+                "pbd_code": "5c0f",
+                "resolution": "1.46"
+            }
+        ]
+    },
+    "hla_a_02_01_slfntiavl": {
+        "structures": [
+            {
+                "pbd_code": "5nmk",
+                "resolution": "1.66"
+            },
+            {
+                "pbd_code": "2c7u",
+                "resolution": "2.38"
+            },
+            {
+                "pbd_code": "1t1w",
+                "resolution": "2.20"
+            }
+        ]
+    },
+    "hla_a_02_01_sllmwitqc": {
+        "structures": [
+            {
+                "pbd_code": "1s9w",
+                "resolution": "2.20"
+            }
+        ]
+    },
+    "hla_a_02_01_slyntiatl": {
+        "structures": [
+            {
+                "pbd_code": "5nmh",
+                "resolution": "1.55"
+            },
+            {
+                "pbd_code": "1t20",
+                "resolution": "2.20"
+            }
+        ]
+    },
+    "hla_a_02_01_slyntvatl": {
+        "structures": [
+            {
+                "pbd_code": "2v2w",
+                "resolution": "1.60"
+            },
+            {
+                "pbd_code": "1t22",
+                "resolution": "2.20"
+            },
+            {
+                "pbd_code": "1t21",
+                "resolution": "2.19"
+            }
+        ]
+    },
+    "hla_a_02_01_ylggpdfpti": {
+        "structures": [
+            {
+                "pbd_code": "5c0g",
+                "resolution": "1.37"
+            }
+        ]
+    },
+    "hla_a_02_01_ylqprtfll": {
+        "structures": [
+            {
+                "pbd_code": "7rtd",
+                "resolution": "2.05"
+            },
+            {
+                "pbd_code": "7n1a",
+                "resolution": "2.06"
+            },
+            {
+                "pbd_code": "7p3d",
+                "resolution": "1.67"
+            },
+            {
+                "pbd_code": "7n6d",
+                "resolution": "2.30"
+            },
+            {
+                "pbd_code": "7mkb",
+                "resolution": "1.90"
+            }
+        ]
+    },
+    "hla_a_02_01_yqfgpdfpia": {
+        "structures": [
+            {
+                "pbd_code": "5c0e",
+                "resolution": "1.49"
+            }
+        ]
+    },
+    "hla_a_02_06_kqwlvwlfl": {
+        "structures": [
+            {
+                "pbd_code": "6ujo",
+                "resolution": "2.25"
+            }
+        ]
+    },
+    "hla_a_02_06_kqwlvwlll": {
+        "structures": [
+            {
+                "pbd_code": "6ujq",
+                "resolution": "2.55"
+            }
+        ]
+    },
+    "hla_a_03_01_alhggwttk": {
+        "structures": [
+            {
+                "pbd_code": "7l1c",
+                "resolution": "1.96"
+            }
+        ]
+    },
+    "hla_a_11_01_gtsgspiinr": {
+        "structures": [
+            {
+                "pbd_code": "5wjn",
+                "resolution": "2.85"
+            }
+        ]
+    },
+    "hla_a_11_01_gtsgspivnr": {
+        "structures": [
+            {
+                "pbd_code": "5wjl",
+                "resolution": "3.15"
+            }
+        ]
+    },
+    "hla_a_11_01_vvvgaggvgk": {
+        "structures": [
+            {
+                "pbd_code": "7ow3",
+                "resolution": "2.46"
+            }
+        ]
+    },
+    "hla_a_24_02_qlprlfpll": {
+        "structures": [
+            {
+                "pbd_code": "7nmd",
+                "resolution": "2.25"
+            }
+        ]
+    },
+    "hla_a_24_02_rfpltfgw": {
+        "structures": [
+            {
+                "pbd_code": "5hga",
+                "resolution": "2.20"
+            },
+            {
+                "pbd_code": "4wu7",
+                "resolution": "2.30"
+            }
+        ]
+    },
+    "hla_a_24_02_rfpltfgwcf": {
+        "structures": [
+            {
+                "pbd_code": "5hgd",
+                "resolution": "2.07"
+            },
+            {
+                "pbd_code": "3vxo",
+                "resolution": "2.61"
+            }
+        ]
+    },
+    "hla_a_24_02_rypltfgw": {
+        "structures": [
+            {
+                "pbd_code": "5hgb",
+                "resolution": "2.40"
+            },
+            {
+                "pbd_code": "4wu5",
+                "resolution": "2.40"
+            }
+        ]
+    },
+    "hla_a_24_02_rypltfgwcf": {
+        "structures": [
+            {
+                "pbd_code": "5hgh",
+                "resolution": "2.39"
+            },
+            {
+                "pbd_code": "3vxn",
+                "resolution": "1.95"
+            },
+            {
+                "pbd_code": "3nfn",
+                "resolution": "2.39"
+            }
+        ]
+    },
+    "hla_a_24_02_rypltlgwcf": {
+        "structures": [
+            {
+                "pbd_code": "3vxp",
+                "resolution": "2.50"
+            }
+        ]
+    },
+    "hla_b_07_02_aprgphggaasgl": {
+        "structures": [
+            {
+                "pbd_code": "6at5",
+                "resolution": "1.50"
+            }
+        ]
+    },
+    "hla_b_07_02_rppifirrl": {
+        "structures": [
+            {
+                "pbd_code": "5wmo",
+                "resolution": "1.62"
+            }
+        ]
+    },
+    "hla_b_08_01_flrgraygl": {
+        "structures": [
+            {
+                "pbd_code": "3x14",
+                "resolution": "2.00"
+            },
+            {
+                "pbd_code": "3x13",
+                "resolution": "1.80"
+            },
+            {
+                "pbd_code": "3sko",
+                "resolution": "1.60"
+            },
+            {
+                "pbd_code": "1m05",
+                "resolution": "1.90"
+            }
+        ]
+    },
+    "hla_b_08_01_hskkkcdel": {
+        "structures": [
+            {
+                "pbd_code": "4qrq",
+                "resolution": "1.70"
+            }
+        ]
+    },
+    "hla_b_27_05_krwiilglnk": {
+        "structures": [
+            {
+                "pbd_code": "4g9d",
+                "resolution": "1.60"
+            },
+            {
+                "pbd_code": "2bss",
+                "resolution": "2.00"
+            }
+        ]
+    },
+    "hla_b_27_05_krwiimglnk": {
+        "structures": [
+            {
+                "pbd_code": "4g8i",
+                "resolution": "1.60"
+            }
+        ]
+    },
+    "hla_b_35_01_eplpqgqltay": {
+        "structures": [
+            {
+                "pbd_code": "1zsd",
+                "resolution": "1.70"
+            }
+        ]
+    },
+    "hla_b_35_01_hpvgdadyfey": {
+        "structures": [
+            {
+                "pbd_code": "4pr5",
+                "resolution": "1.80"
+            }
+        ]
+    },
+    "hla_b_35_01_hpvgqadyfey": {
+        "structures": [
+            {
+                "pbd_code": "4pra",
+                "resolution": "1.85"
+            }
+        ]
+    },
+    "hla_b_35_01_iplteeael": {
+        "structures": [
+            {
+                "pbd_code": "5xos",
+                "resolution": "1.70"
+            }
+        ]
+    },
+    "hla_b_35_01_lpeplpqgqltay": {
+        "structures": [
+            {
+                "pbd_code": "3vfo",
+                "resolution": "1.70"
+            },
+            {
+                "pbd_code": "3kww",
+                "resolution": "2.18"
+            },
+            {
+                "pbd_code": "1zhk",
+                "resolution": "1.60"
+            }
+        ]
+    },
+    "hla_b_35_08_hpvgeadyfey": {
+        "structures": [
+            {
+                "pbd_code": "2fz3",
+                "resolution": "1.90"
+            }
+        ]
+    },
+    "hla_b_35_08_lpeplpqgqltay": {
+        "structures": [
+            {
+                "pbd_code": "3vfp",
+                "resolution": "1.85"
+            },
+            {
+                "pbd_code": "3vfn",
+                "resolution": "1.50"
+            },
+            {
+                "pbd_code": "3vfm",
+                "resolution": "1.90"
+            },
+            {
+                "pbd_code": "1zhl",
+                "resolution": "1.50"
+            }
+        ]
+    },
+    "hla_b_37_01_fedlrvlsf": {
+        "structures": [
+            {
+                "pbd_code": "6mt6",
+                "resolution": "1.31"
+            }
+        ]
+    },
+    "hla_b_42_01_tpqdlntml": {
+        "structures": [
+            {
+                "pbd_code": "4u1j",
+                "resolution": "1.38"
+            }
+        ]
+    },
+    "hla_b_44_05_eenlldfvrf": {
+        "structures": [
+            {
+                "pbd_code": "3dx8",
+                "resolution": "2.10"
+            }
+        ]
+    },
+    "hla_b_44_05_eeylkawtf": {
+        "structures": [
+            {
+                "pbd_code": "3kpq",
+                "resolution": "1.84"
+            }
+        ]
+    },
+    "hla_b_44_05_eeylqafty": {
+        "structures": [
+            {
+                "pbd_code": "3kpp",
+                "resolution": "1.90"
+            }
+        ]
+    },
+    "hla_b_51_01_taftipsi": {
+        "structures": [
+            {
+                "pbd_code": "1e28",
+                "resolution": "3.00"
+            }
+        ]
+    },
+    "hla_b_53_01_qasqevknw": {
+        "structures": [
+            {
+                "pbd_code": "7r7v",
+                "resolution": "1.60"
+            }
+        ]
+    },
+    "hla_b_81_01_tpqdlntml": {
+        "structures": [
+            {
+                "pbd_code": "4u1i",
+                "resolution": "1.92"
+            }
+        ]
+    },
+    "hla_c_08_02_gadgvgksa": {
+        "structures": [
+            {
+                "pbd_code": "6uli",
+                "resolution": "1.88"
+            },
+            {
+                "pbd_code": "6jtp",
+                "resolution": "1.90"
+            }
+        ]
+    },
+    "hla_c_08_02_gadgvgksal": {
+        "structures": [
+            {
+                "pbd_code": "6ulk",
+                "resolution": "1.90"
+            },
+            {
+                "pbd_code": "6jtn",
+                "resolution": "1.90"
+            }
+        ]
+    },
+    "hla_e_01_03_rlpakapll": {
+        "structures": [
+            {
+                "pbd_code": "6gh1",
+                "resolution": "2.10"
+            }
+        ]
+    }
+}
