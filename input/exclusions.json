@@ -46,6 +46,18 @@
         }, 
         "1fzo":{
             "reason":"H2-Kbm8 not H2-Kb"
+        },
+        "7p0a":{
+            "reason":"D-amino acid in peptide"
+        },
+        "7p0t":{
+            "reason":"D-amino acid in peptide"
+        },
+        "7ow4":{
+            "reason":"Missing residues in peptide structure"
+        },
+        "2fyy":{
+            "reason":"Missing residues in peptide structure"
         }
     }, 
     "apo_tcr": {
