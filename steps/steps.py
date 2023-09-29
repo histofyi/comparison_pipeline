@@ -1,5 +1,8 @@
 from create_folder_structure import create_folder_structure
-from download_apo_tcr_structures import download_apo_tcr_structures
+from catalog_holo_tcr_structures import catalog_holo_tcr_structures
+from catalog_apo_pmhc_structures import catalog_apo_pmhc_structures
+
+
 
 def stub_function():
     pass
@@ -21,25 +24,25 @@ steps = {
         'is_multi': False,
         'multi_param': None,
         'multi_options': None,
-        'has_progress': True
+        'has_progress': False
     },
     '2': {
-        'function': download_apo_tcr_structures,
+        'function': catalog_holo_tcr_structures,
         'title_template':'the apo TCR structures from histo.',
-        'title_verb': ['Downloading','Downloads'],
+        'title_verb': ['Cataloguing','Catalogs'],
         'is_multi': False,
         'multi_param': None,
         'multi_options': None,
-        'has_progress': True
+        'has_progress': False
     },
     '3': {
-        'function': download_holo_mhc_structures,
-        'title_template':'the holo TCR structures from histo.',
-        'title_verb': ['Downloading','Downloads'],
+        'function': catalog_apo_pmhc_structures,
+        'title_template':'the apo pMHC structures from histo.',
+        'title_verb': ['Cataloguing','Catalogs'],
         'is_multi': False,
         'multi_param': None,
         'multi_options': None,
-        'has_progress': True
+        'has_progress': False
     },
     '4': {
         'function': download_holo_tcr_structures,
