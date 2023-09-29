@@ -30,6 +30,7 @@ dependencies:
     - packaging==23.1
     - pipeline==0.1
     - pygments==2.16.1
+    - pyyaml==6.0.1
     - requests==2.31.0
     - rich==13.5.3
     - smmap==5.0.1
