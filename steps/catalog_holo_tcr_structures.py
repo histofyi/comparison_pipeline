@@ -1,4 +1,4 @@
-from typing import Dict, List, Tuple
+from typing import Dict, List
 
 from helpers.files import read_json, write_json
 
@@ -34,7 +34,7 @@ def catalog_holo_tcr_structures(**kwargs) -> Dict:
     config = kwargs['config']
     output_path = kwargs['output_path']
 
-    exclusions = read_json(f"input/exclusions.json")
+    exclusions = read_json(f"input/exclusions.json")['holo']
 
     # Create the url for the histo API.
     holo_api_url = f"{config['CONSTANTS']['HISTO_BASE_SETS_API_URL']}/complex_types/class_i_with_peptide_and_alpha_beta_tcr"
@@ -46,6 +46,8 @@ def catalog_holo_tcr_structures(**kwargs) -> Dict:
 
     # Initialise the list of holo TCR structures.
     holo_structures = {}
+    holo_tcr_sequences = {}
+    holo_complexes = {}
 
     # Initialise the structure count. This is the complete number of structures.
     holo_structure_count = 0
@@ -54,6 +56,7 @@ def catalog_holo_tcr_structures(**kwargs) -> Dict:
     # Initialise the exclusion count. This is the number of structures excluded from the analysis.
     exclusion_count = 0
 
+    rejections = []
 
     for page_number in page_numbers:
 
@@ -70,6 +73,23 @@ def catalog_holo_tcr_structures(**kwargs) -> Dict:
             peptide = structure['assigned_chains']['peptide']['sequence']
             resolution = structure['resolution']
 
+            tcr_details = {}
+            for chain in ['tcr_alpha', 'tcr_beta']:
+
+                if chain not in structure['assigned_chains']:
+                    tcr_details[chain] = None
+                else:
+                    if 'subgroup' not in structure['assigned_chains'][chain]:
+                        subgroup = None
+                    else:
+                        subgroup = structure['assigned_chains'][chain]['subgroup']
+                    tcr_details[chain] = {
+                        'sequence': structure['assigned_chains'][chain]['sequence'],
+                        'subgroup': subgroup
+                    }
+
+
+
             # Check if the structure is in the exclusions list. 
             # Structures are excluded for several reasons, including:
             # - the TCR binding in a non-canonical orientation
@@ -78,31 +98,49 @@ def catalog_holo_tcr_structures(**kwargs) -> Dict:
             # If the structure is not in the exclusions list, add it to the list of holo structures.
             if pdb_code not in exclusions:
 
+                holo_tcr_sequences[pdb_code] = tcr_details
                 # Create a complex key, this is a compound key of the allele and peptide.
                 complex_key = f"{allele}_{peptide.lower()}"
 
+                holo_complexes[pdb_code] = complex_key
+                
                 # Check if the peptide is long enough to be a canonical peptide.
                 if len(peptide) >= 8:
 
-                    # Check if the complex is already in the list of holo structures.
-                    if complex_key not in holo_structures:  
-                        if verbose:
-                            print (f"Found new complex {complex_key}.")
-                        # If the complex is not in the list of holo structures, add it.
-                        holo_structures[complex_key] = {
-                            'allele':allele,
-                            'peptide':peptide,
-                            'structures':[]
-                        }
-                        # Increment the complex count.
-                        complex_count += 1
-                    # Add the structure to the list of holo structures.
-                    holo_structures[complex_key]['structures'].append({
-                        'pdb_code':pdb_code,
-                        'resolution':resolution
-                    })
-                    # Increment the structure count.
-                    holo_structure_count += 1
+                    # We only want complexes with "normal" peptides, i.e. no weird amino acids or modifications.
+                    correct_sequence_and_length = False
+
+                    for peptide_chain in structure['peptide']:
+                        if 'correct_sequence_and_length' in structure['peptide'][peptide_chain]['features']:
+                            correct_sequence_and_length = True
+                        features = structure['peptide'][peptide_chain]['features']
+                    
+                    # If the peptide is a "normal" peptide.
+                    if correct_sequence_and_length:
+
+                        # Check if the complex is already in the list of holo structures.
+                        if complex_key not in holo_structures:  
+                            if verbose:
+                                print (f"Found new complex {complex_key}.")
+                            # If the complex is not in the list of holo structures, add it.
+                            holo_structures[complex_key] = {
+                                'allele':allele,
+                                'peptide':peptide,
+                                'structures':[]
+                            }
+                            # Increment the complex count.
+                            complex_count += 1
+                        # Add the structure to the list of holo structures.
+                        holo_structures[complex_key]['structures'].append({
+                            'pdb_code':pdb_code,
+                            'resolution':resolution
+                        })
+                        # Increment the structure count.
+                        holo_structure_count += 1
+
+                    else:
+                        # Add the structure to the list of rejections, have a look at these, they might be useful to understand later
+                        rejections.append({'pdb_code':pdb_code, 'features':features})
             else:
                 # Increment the exclusion count.
                 exclusion_count += 1
@@ -111,10 +149,19 @@ def catalog_holo_tcr_structures(**kwargs) -> Dict:
     # Write the holo structures to file.
     write_json(f"{output_path}/data/holo_structures.json", holo_structures, verbose, pretty=True)
 
+    # Write the holo TCR sequences to file.
+    write_json(f"{output_path}/data/holo_tcr_sequences.json", holo_tcr_sequences, verbose, pretty=True)
+
+    # Write the holo complexes to file.
+    write_json(f"{output_path}/data/holo_complexes.json", holo_complexes, verbose, pretty=True)
+
+    # Create the action output.
     action_output = {
         'holo_structures_processed':holo_structure_count,
         'complexes_processed':complex_count, 
-        'exclusions_processed':exclusion_count
+        'exclusions_processed':exclusion_count,
+        'rejection_count':len(rejections),
+        'rejections':rejections
     }
 
     return action_output
