@@ -1,11 +1,54 @@
 {
-    "5swz":{
-        "reason":"non-canonical reverse docking of TCR"
+    "holo": {
+        "7byd": {
+            "reason": "Non-standard lipopeptide"
+        },
+        "7ndq": {
+            "reason": "Three letter chain labels, will be fixed in next structure release"
+        },
+        "7ndt": {
+            "reason": "Three letter chain labels, will be fixed in next structure release"
+        },
+        "7ndu": {
+            "reason": "Three letter chain labels, will be fixed in next structure release"
+        },
+        "7pbc": {
+            "reason": "Three letter chain labels, will be fixed in next structure release"
+        },
+        "7pdw": {
+            "reason": "Three letter chain labels, will be fixed in next structure release"
+        },
+        "5swz":{
+            "reason":"non-canonical reverse docking of TCR"
+        },
+        "5sws":{
+            "reason":"non-canonical reverse docking of TCR"
+        },
+        "7jwi":{
+            "reason":"non-canonical reverse docking of TCR"
+        }, 
+        "3d39":{
+            "reason":"Non-standard flourinated peptide"
+        },
+        "3d3v":{
+            "reason":"Non-standard flourinated peptide"
+        }
     },
-    "5sws":{
-        "reason":"non-canonical reverse docking of TCR"
-    },
-    "7jwi":{
-        "reason":"non-canonical reverse docking of TCR"
+    "apo_pmhc": {
+        "1fzj":{
+            "reason":"H2-Kbm1 not H2-Kb"
+        },
+        "1fzk":{
+            "reason":"H2-Kbm1 not H2-Kb"
+        },    
+        "1fzm":{
+            "reason":"H2-Kbm8 not H2-Kb"
+        }, 
+        "1fzo":{
+            "reason":"H2-Kbm8 not H2-Kb"
+        }
+    }, 
+    "apo_tcr": {
+
     }
 }
