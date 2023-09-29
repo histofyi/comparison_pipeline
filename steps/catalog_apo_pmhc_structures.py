@@ -51,12 +51,17 @@ def catalog_apo_pmhc_structures(**kwargs) -> Dict:
     # Read the list of complexes with a holo pMHC:TCR structure.
     holo_structures = read_json(f"{output_path}/data/holo_structures.json")
 
+    exclusions = read_json(f"input/exclusions.json")['apo_pmhc']
+
     apo_pmhc_structures = {}
     no_apo_pmhc_structures = []
 
     complex_count = 0
     structure_count = 0
+    exclusion_count = 0
+
     removed_structures = []
+  
     # Iterate over the complexes.
     for complex_key in holo_structures:
 
@@ -74,20 +79,27 @@ def catalog_apo_pmhc_structures(**kwargs) -> Dict:
 
         else:
             filtered_apo_structures = []
+
             for structure in complex_apo_structures:
+            
+                if structure['pdb_code'] not in exclusions:
 
-                correct_sequence_and_length = False
+                    correct_sequence_and_length = False
 
-                for peptide_chain in structure['peptide']:
-                    if 'correct_sequence_and_length' in structure['peptide'][peptide_chain]['features']:
-                        correct_sequence_and_length = True
-                    features = structure['peptide'][peptide_chain]['features']
-                
-                if correct_sequence_and_length:
-                    filtered_apo_structures.append({'pbd_code':structure['pdb_code'], 'resolution':structure['resolution']})
-                    structure_count += 1
-                else:
-                    removed_structures.append({'pbd_code':structure['pdb_code'], 'features':features})
+                    for peptide_chain in structure['peptide']:
+                        if 'correct_sequence_and_length' in structure['peptide'][peptide_chain]['features']:
+                            correct_sequence_and_length = True
+                        features = structure['peptide'][peptide_chain]['features']
+                    
+                    if correct_sequence_and_length:
+                        filtered_apo_structures.append({'pbd_code':structure['pdb_code'], 'resolution':structure['resolution']})
+                        structure_count += 1
+                    else:
+                        removed_structures.append({'pbd_code':structure['pdb_code'], 'features':features})
+
+                else:    
+                    # Increment the exclusion count.
+                    exclusion_count += 1   
 
             if len(filtered_apo_structures) == 0:
                 no_apo_pmhc_structures.append(complex_key)
@@ -97,8 +109,17 @@ def catalog_apo_pmhc_structures(**kwargs) -> Dict:
                         'structures':filtered_apo_structures
                     }
                 complex_count += 1
-        print (f"For {allele_slug}/{peptide} there are {len(filtered_apo_structures)} apo structures.")
+        if verbose:
+            print (f"For {allele_slug}/{peptide} there are {len(filtered_apo_structures)} apo structures.")
 
     write_json(f"{output_path}/data/apo_pmhc_structures.json", apo_pmhc_structures, verbose=verbose, pretty=True)
     write_json(f"{output_path}/data/missing_apo_pmhc_structures.json", no_apo_pmhc_structures, verbose=verbose, pretty=True)
 
+    action_output = {
+        'complexes_processed':complex_count, 
+        'structures_processed':structure_count, 
+        'exclusions_processed':exclusion_count,
+        'removed_structures':removed_structures
+    }
+
+    return action_output
