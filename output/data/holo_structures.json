@@ -458,14 +458,6 @@
             {
                 "pdb_code": "7qpj",
                 "resolution": "1.54"
-            },
-            {
-                "pdb_code": "7pdw",
-                "resolution": "1.82"
-            },
-            {
-                "pdb_code": "7pbc",
-                "resolution": "2.04"
             }
         ]
     },
@@ -588,14 +580,6 @@
             {
                 "pdb_code": "3qfj",
                 "resolution": "2.29"
-            },
-            {
-                "pdb_code": "3d39",
-                "resolution": "2.81"
-            },
-            {
-                "pdb_code": "3d3v",
-                "resolution": "2.80"
             }
         ]
     },
@@ -1478,30 +1462,6 @@
             {
                 "pdb_code": "6zkx",
                 "resolution": "2.17"
-            }
-        ]
-    },
-    "hla_e_01_03_rmyspvsil": {
-        "allele": "hla_e_01_03",
-        "peptide": "RMYSPVSIL",
-        "structures": [
-            {
-                "pdb_code": "7ndu",
-                "resolution": "2.90"
-            },
-            {
-                "pdb_code": "7ndq",
-                "resolution": "2.55"
-            }
-        ]
-    },
-    "hla_e_01_03_vmaprtlil": {
-        "allele": "hla_e_01_03",
-        "peptide": "VMAPRTLIL",
-        "structures": [
-            {
-                "pdb_code": "7ndt",
-                "resolution": "3.00"
             }
         ]
     }
